@@ -22,14 +22,20 @@ H2Database는 사용자홈디렉토리 아래에 `.h2database/orm-learn` 이라�
   * [Hibernate 4.3.11](http://hibernate.org/orm/documentation/4.3/)
   * [Spring Data JPA](http://docs.spring.io/spring-data/jpa/docs/1.9.2.RELEASE/reference/html/)
   * [Querydsl 3.7.0](http://www.querydsl.com/static/querydsl/3.7.0/reference/html/)
-  * [Thymeleaf (2.1)](http://www.thymeleaf.org/documentation.html): HTML5 로 구성되는 화면구성 템플릿엔진  	
 * [H2Database 1.4.190](http://www.h2database.com/html/main.html)
 * [HikariCP 2.4.3](https://brettwooldridge.github.io/HikariCP/)
 * [Gradle 2.10](https://docs.gradle.org/current/release-notes)
 
+***
 # 관련학습정보
 * [Java - 생활코딩](https://opentutorials.org/module/516/4551)
 * [DVCS(Distributed Version Controll System) - Git](http://pcottle.github.io/learnGitBranching/)
+* [스프링부트 소개 - 최범균](http://www.slideshare.net/madvirus/spring-boot-42817314?related=2)
 * [SpringBoot 아무고나-백기선](https://www.youtube.com/playlist?list=PLCpTH9CC0WwZlwiefbaUlG9jp344RedMd)
+	* [스프링 부트와 로깅](http://www.slideshare.net/whiteship/ss-47273947?related=1)
 * [스프링부트 소개 - 김지헌](https://www.youtube.com/watch?v=suG19ZUF9bE)
+	* [어떤 개발 이야기](http://www.slideshare.net/ihoneymon/gradle-git)
 * [클린코더스 - 백명석](https://www.youtube.com/playlist?list=PLagTY0ogyVkIl2kTr08w-4MLGYWJz7lNK)
+* [스프링 애플리케이션 개발 및 분석](https://gist.github.com/ihoneymon/a0825feb1aa443c0396d)
+* [TDD(Test Driven Development): 테스트주도 개발을 이야기하다](https://gist.github.com/ihoneymon/1fa3b302be99121fabd8)
+	* [TDD: Test Driven Development 첫번째 이야기](http://www.slideshare.net/ihoneymon/tdd-test-driven-development-53142064)

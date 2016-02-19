@@ -33,8 +33,9 @@ H2Database는 사용자홈디렉토리 아래에 `.h2database/orm-learn` 이라�
 * [스프링부트 소개 - 최범균](http://www.slideshare.net/madvirus/spring-boot-42817314?related=2)
 * [SpringBoot 아무고나-백기선](https://www.youtube.com/playlist?list=PLCpTH9CC0WwZlwiefbaUlG9jp344RedMd)
 	* [스프링 부트와 로깅](http://www.slideshare.net/whiteship/ss-47273947?related=1)
-* [스프링부트 소개 - 김지헌](https://www.youtube.com/watch?v=suG19ZUF9bE)
+* [스프링부트 소개 - 김지헌](https://www.youtube.com/watch?v=suG19ZUF9bE) - 영상
 	* [어떤 개발 이야기](http://www.slideshare.net/ihoneymon/gradle-git)
+	* [스프링부트 소개 - 김지헌](https://gist.github.com/ihoneymon/8a905e1dd8393b6b9298)
 * [클린코더스 - 백명석](https://www.youtube.com/playlist?list=PLagTY0ogyVkIl2kTr08w-4MLGYWJz7lNK)
 * [스프링 애플리케이션 개발 및 분석](https://gist.github.com/ihoneymon/a0825feb1aa443c0396d)
 * [TDD(Test Driven Development): 테스트주도 개발을 이야기하다](https://gist.github.com/ihoneymon/1fa3b302be99121fabd8)

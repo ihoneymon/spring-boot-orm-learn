@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    sql-script-encoding: UTF-8
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:~/.h2database/orm-learn;CACHE_SIZE=10240;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=15000;MVCC=true;AUTO_SERVER=TRUE;     
+    username: sa
+    password:
+  jpa:
+    database: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: update

@@ -53,6 +53,13 @@ dependencies {
     compile "com.zaxxer:HikariCP"
 	compile "com.h2database:h2"
 	
+	/**
+     * http://www.projectlombok.org/
+     * Java 클래스에서 자주생성하는 getter/setter 등의 메서드를 필드에 @Getter @Setter
+     * 선언하면 자동생성해주는 프레임워크
+     */
+    compile "org.projectlombok:lombok:1.16.6"
+	
 	testCompile "com.jayway.jsonpath:json-path"
 	testCompile "org.springframework.boot:spring-boot-starter-test" 
 }

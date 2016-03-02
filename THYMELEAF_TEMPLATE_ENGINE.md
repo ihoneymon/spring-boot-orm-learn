@@ -157,7 +157,7 @@ webjar는 클라이언트에서 사용되는 웹 라이브러리(jquery, bootstr
   }
   ```
   이렇게하고 프로젝트를 갱신하면 참조라이브러리에 추가되어 있는 `jquery.2.2.1.jar` 와 `bootstrap.3.3.6`를 확인할 수 있다.
-![](![](images/webjars-jquery-2.2.1.png))
+  ![](images/webjars-jquery-2.2.1.png)
 
 
 ## 자바스크립트 조건식 처리 중 문법 오류 대처

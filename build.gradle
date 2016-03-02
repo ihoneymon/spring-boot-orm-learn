@@ -60,6 +60,10 @@ dependencies {
      * 선언하면 자동생성해주는 프레임워크
      */
     compile "org.projectlombok:lombok:1.16.6"
+    
+    // webjars
+    compile 'org.webjars:jquery:2.2.1'
+    compile 'org.webjars:bootstrap:3.3.6'
 	
 	testCompile "com.jayway.jsonpath:json-path"
 	testCompile "org.springframework.boot:spring-boot-starter-test" 

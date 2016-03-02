@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ORM learn: Thymeleaf and Webjars</title>
+
+  <!-- Bootstrap -->
+  <link href='/webjars/bootstrap/3.3.6/css/bootstrap.min.css' rel="stylesheet" />
+  <link th:href="@{css/starter-template.css}" rel="stylesheet" />
+</head>
+
+<body>
+  <nav th:include="fragments/nav-frag :: nav-frag" class="navbar navbar-inverse navbar-fixed-top"></nav>
+
+  <div class="container" layout:fragment="content">
+    <span>Page contents here</span>
+  </div>
+
+  <script src="/webjars/jquery/2.2.1/js/jquery.min.js"></script>
+  <script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script layout:fragment="script">
+  </script>
+</body>
+
+</html>

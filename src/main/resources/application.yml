@@ -10,3 +10,5 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+  thymeleaf:
+    cache: false #개발동안에는 요청마다 렌더링하도록 처리, 운영시에는 true 로 하여 캐시처리하여 렌더링 횟수를 줄임

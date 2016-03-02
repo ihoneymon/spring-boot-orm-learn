@@ -15,8 +15,8 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#" th:href="@{/}">Home</a></li>
-          <li><a href="#members" th:href="@{/members}">Members</a></li>
+          <li th:class="${greeting ne null} ? 'active'" ><a href="#" th:href="@{/}">Home</a></li>
+          <li th:class="${members ne null} ? 'active'" ><a href="#members" th:href="@{/members}">Members</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->

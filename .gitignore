@@ -127,4 +127,4 @@ local.properties
 .springBeans
 
 #querydsl
-#src/main/qureydsl
+src/main/querydsl

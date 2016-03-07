@@ -9,6 +9,7 @@ import javax.persistence.Id;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.util.Assert;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -33,9 +34,22 @@ public class Member implements Serializable {
     @Setter
     private String name;
 
+    @Getter
     @CreatedDate
     private Date createdDate;
-    
+
+    @Getter
     @LastModifiedDate
     private Date lastModifiedDate;
+
+    protected Member() {
+    }
+
+    public Member(String name, String email) {
+        Assert.hasText(name);
+        Assert.hasText(email);
+
+        this.name = name;
+        this.email = email;
+    }
 }

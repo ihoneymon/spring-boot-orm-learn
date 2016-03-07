@@ -18,4 +18,8 @@ public class MemberForm implements Serializable {
     @Length(min = 5, max = 30)
     @NotEmpty
     private String email;
+
+    public Member createEntity() {
+        return new Member(name, email);
+    }
 }

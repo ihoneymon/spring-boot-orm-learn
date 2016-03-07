@@ -4,14 +4,15 @@
 <div layout:fragment="content">
   <h1>Members Create</h1>
   <div>
-  	<form method="POST" id="member-form" th:object="${memberForm}" th:action="@{/members}">
+  	<form method="POST" id="member-form" th:object="${memberForm}" th:action="${member ne null} ? @{'/members/' + ${member.id}} : @{/members}">
+     <input th:if="${member ne null}" type="hidden" id="_method" name="_method" value="put"/>
      <div>
       <span class="label label-default" for="name">Name</span>
-      <input type="text" id="name" name="name"/>
+      <input type="text" id="name" name="name" th:value="${memberForm.name}"/>
      </div>
      <div>
       <span class="label label-default" for="email">Email</span>
-      <input type="text" id="email" name="email"/>
+      <input type="email" id="email" name="email" th:value="${memberForm.email}"/>
      </div>
    </form>
    <button type="button" id="btn-submit">Submit</button>
@@ -20,7 +21,7 @@
 </div>
 
 <div layout:fragment="script-lib">
-	<script th:src="@{/js/members-create.js}"></script>
+	<script th:src="@{/js/members-detail.js}"></script>
 </div>
 
 </html>

@@ -14,6 +14,7 @@
      <th>Name</th>
      <th>Email</th>
      <th>CreatedDate</th>
+     <th></th>
     </tr>
    </thead>
    <tbody>
@@ -29,6 +30,9 @@
      </td>
      <td>
        <a th:href="@{'/members/' + ${member.id}}"  th:text="${member.createdDate}">Member created date</a>
+     </td>
+     <td>
+      <button type="button" class="btn btn-danger member-delete" ><i class="glyphicon glyphicon-remove" th:attr="data-member-id=${member.id}"></i>Delete</button>
      </td>
     </tr>
     <tr th:if="${page.content.empty}">

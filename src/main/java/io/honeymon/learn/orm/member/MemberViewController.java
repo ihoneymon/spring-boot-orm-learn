@@ -1,11 +1,13 @@
 package io.honeymon.learn.orm.member;
 
-import static org.springframework.web.bind.annotation.RequestMethod.*;
+import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
+import static org.springframework.web.bind.annotation.RequestMethod.PUT;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,14 +41,14 @@ public class MemberViewController {
      */
     @RequestMapping(value = "create", method = GET)
     public String viewCreate(MemberForm memberForm) {
-        return "members/create";
+        return "members/detail";
     }
 
     @RequestMapping(method = POST)
     public String createMember(@Valid MemberForm memberForm, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             // TODO 에러발생한 것에 대한 처리
-            return "members/create";
+            return "members/detail";
         }
         memberService.save(memberForm.createEntity());
         return "redirect:/members";
@@ -57,13 +59,13 @@ public class MemberViewController {
         model.addAttribute("member", member);
         memberForm.setName(member.getName());
         memberForm.setEmail(member.getEmail());
-        return "members/create";
+        return "members/detail";
     }
 
     @RequestMapping(value = "/{member}", method = PUT)
     public String modifyMember(@PathVariable Member member, @Valid MemberForm memberForm, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "members/create";
+            return "members/detail";
         }
 
         member.setName(memberForm.getName());

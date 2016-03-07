@@ -6,6 +6,7 @@
   <div>
   	<form method="POST" id="member-form" th:object="${memberForm}" th:action="${member ne null} ? @{'/members/' + ${member.id}} : @{/members}">
      <input th:if="${member ne null}" type="hidden" id="_method" name="_method" value="put"/>
+     <input th:if="${member ne null}" type="hidden" id="member-id" name="member-id" th:value="${member.id}"/>
      <div>
       <span class="label label-default" for="name">Name</span>
       <input type="text" id="name" name="name" th:value="${memberForm.name}"/>
@@ -15,8 +16,9 @@
       <input type="email" id="email" name="email" th:value="${memberForm.email}"/>
      </div>
    </form>
-   <button type="button" id="btn-submit">Submit</button>
-   <button type="button" id="btn-cancel">Cancel</button>
+   <button type="button" id="btn-submit" class="btn btn-success">Submit</button>
+   <button type="button" id="btn-cancel" class="btn btn-default">Cancel</button>
+   <button th:if="${member ne null}" type="button" id="btn-delete" class="btn btn-danger">Delete</button>
   </div>
 </div>
 

@@ -2,14 +2,37 @@
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/default">
 
 <div layout:fragment="content">
-  <h1>Members</h1>
-  <div>
-  	<span th:text="${members}"></span>
-  </div>
+ <h1>Members</h1>
+ <div class="btn-group text-right" role="group" aria-label="...">
+  <button type="button" class="btn btn-primary" id="btn-create-member">Create Member</button>
+ </div>
+ <div>
+  <table class="table table-striped table-hover">
+   <thead>
+    <tr>
+     <th>#Id</th>
+     <th>Name</th>
+     <th>Email</th>
+     <th>CreatedDate</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr th:each="member: ${page.content}">
+     <td th:text="${member.id}">Member sequence</td>
+     <td th:text="${member.name}">Member name</td>
+     <td th:text="${member.email}">Member email</td>
+     <td th:text="${member.createdDate}">Member created date</td>
+    </tr>
+    <tr th:if="${page.content.empty}">
+     <td colspan="4" class="text-center">No data</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
 </div>
 
 <div layout:fragment="script-lib">
-	<script th:src="@{js/members-main.js}"></script>
+ <script th:src="@{js/members-main.js}"></script>
 </div>
 
 </html>

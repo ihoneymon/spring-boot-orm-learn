@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/default">
+
+<div layout:fragment="content">
+  <h1>Members Create</h1>
+  <div>
+  	<form method="POST" id="member-form" th:object="${memberForm}" th:action="@{/members}">
+     <div>
+      <span class="label label-default" for="name">Name</span>
+      <input type="text" id="name" name="name"/>
+     </div>
+     <div>
+      <span class="label label-default" for="email">Email</span>
+      <input type="text" id="email" name="email"/>
+     </div>
+   </form>
+   <button type="button" id="btn-submit">Submit</button>
+   <button type="button" id="btn-cancel">Cancel</button>
+  </div>
+</div>
+
+<div layout:fragment="script-lib">
+	<script th:src="@{/js/members-create.js}"></script>
+</div>
+
+</html>

@@ -125,3 +125,6 @@ local.properties
 
 # STS (Spring Tool Suite)
 .springBeans
+
+#querydsl
+#src/main/qureydsl

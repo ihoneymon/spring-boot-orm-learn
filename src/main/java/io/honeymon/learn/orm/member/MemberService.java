@@ -1,5 +1,8 @@
 package io.honeymon.learn.orm.member;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 /**
  * {@link Member} 에 대한 서비스를 관리하는 인터페이스
  * 
@@ -30,5 +33,14 @@ public interface MemberService {
      * @return
      */
     Member findById(Long id);
+
+    /**
+     * Search Member
+     * 
+     * @param condition
+     * @param pageable
+     * @return
+     */
+    Page<Member> search(MemberCondition condition, Pageable pageable);
 
 }

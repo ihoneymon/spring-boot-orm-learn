@@ -1,10 +1,11 @@
-package io.honeymon.learn.orm.member;
+package io.honeymon.learn.orm.view;
 
 import java.io.Serializable;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
+import io.honeymon.learn.orm.domain.Member;
 import lombok.Data;
 
 @Data

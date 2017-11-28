@@ -16,15 +16,15 @@ H2Database는 사용자홈디렉토리 아래에 `.h2database/orm-learn` 이라�
 
 ***
 # 사용된 라이브러리
-* [SpringBoot 1.3.2.RELEASAE](http://docs.spring.io/spring-boot/docs/1.3.2.RELEASE/reference/htmlsingle/)
-  * [Spring Framework 4.2.4.RELEASE](http://docs.spring.io/spring/docs/4.2.4.RELEASE/spring-framework-reference/htmlsingle/)
+* [SpringBoot 1.5.8.RELEASAE](http://docs.spring.io/spring-boot/docs/1.3.2.RELEASE/reference/htmlsingle/)
+  * [Spring Framework](http://docs.spring.io/spring/docs/4.2.4.RELEASE/spring-framework-reference/htmlsingle/)
   	* [스프링 프레임워크...](https://gist.github.com/ihoneymon/594bf76682bc0e29e9f5): 자바를 기반으로 한 경량엔터프라이즈 개발플랫폼  	
-  * [Hibernate 4.3.11](http://hibernate.org/orm/documentation/4.3/)
+  * [Hibernate](http://hibernate.org/orm/documentation/5.0/)
   * [Spring Data JPA](http://docs.spring.io/spring-data/jpa/docs/1.9.2.RELEASE/reference/html/)
-  * [Querydsl 3.7.0](http://www.querydsl.com/static/querydsl/3.7.0/reference/html/)
-* [H2Database 1.4.190](http://www.h2database.com/html/main.html)
-* [HikariCP 2.4.3](https://brettwooldridge.github.io/HikariCP/)
-* [Gradle 2.10](https://docs.gradle.org/current/release-notes)
+  * [Querydsl](http://www.querydsl.com/static/querydsl/4.1.4/reference/html/)
+* [H2Database 1.4.196](http://www.h2database.com/html/main.html)
+* [HikariCP](https://brettwooldridge.github.io/HikariCP/)
+* [Gradle](https://docs.gradle.org/current/release-notes)
 
 ***
 # 관련학습정보

@@ -1,4 +1,4 @@
-package io.honeymon.learn.orm.member;
+package io.honeymon.learn.orm.domain;
 
 import java.util.Date;
 

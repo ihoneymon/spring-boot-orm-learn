@@ -1,7 +1,10 @@
-package io.honeymon.learn.orm.member;
+package io.honeymon.learn.orm.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+
+import io.honeymon.learn.orm.domain.Member;
+import io.honeymon.learn.orm.view.MemberCondition;
 
 /**
  * {@link Member} 에 대한 서비스를 관리하는 인터페이스

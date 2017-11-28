@@ -1,4 +1,4 @@
-package io.honeymon.learn.orm.member;
+package io.honeymon.learn.orm.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -7,6 +7,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.querydsl.core.BooleanBuilder;
+
+import io.honeymon.learn.orm.domain.Member;
+import io.honeymon.learn.orm.domain.QMember;
+import io.honeymon.learn.orm.repository.MemberRepository;
+import io.honeymon.learn.orm.view.MemberCondition;
 
 @Transactional(readOnly = true)
 @Service

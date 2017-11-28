@@ -1,4 +1,4 @@
-package io.honeymon.learn.orm;
+package io.honeymon.learn.orm.api;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

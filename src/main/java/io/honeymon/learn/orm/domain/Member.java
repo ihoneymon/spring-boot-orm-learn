@@ -1,4 +1,4 @@
-package io.honeymon.learn.orm.member;
+package io.honeymon.learn.orm.domain;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -50,12 +50,9 @@ public class Member implements Serializable {
     @LastModifiedDate
     private Date lastModifiedDate;
 
-    protected Member() {
-    }
-
     public Member(String name, String email) {
-        Assert.hasText(name);
-        Assert.hasText(email);
+        Assert.hasText(name, "name required.");
+        Assert.hasText(email, "email required.");
 
         this.name = name;
         this.email = email;

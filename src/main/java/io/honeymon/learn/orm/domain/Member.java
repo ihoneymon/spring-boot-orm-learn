@@ -49,6 +49,8 @@ public class Member implements Serializable {
     @Setter(AccessLevel.PROTECTED)
     @LastModifiedDate
     private Date lastModifiedDate;
+    
+    protected Member() {}
 
     public Member(String name, String email) {
         Assert.hasText(name, "name required.");

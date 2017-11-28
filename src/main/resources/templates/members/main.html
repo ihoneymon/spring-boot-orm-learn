@@ -32,11 +32,11 @@
        <a th:href="@{'/members/' + ${member.id}}"  th:text="${member.createdDate}">Member created date</a>
      </td>
      <td>
-      <button type="button" class="btn btn-danger member-delete" ><i class="glyphicon glyphicon-remove" th:attr="data-member-id=${member.id}"></i>Delete</button>
+      <button type="button" class="btn btn-danger member-delete" th:attr="data-member-id=${member.id}"><i class="glyphicon glyphicon-remove"></i>Delete</button>
      </td>
     </tr>
     <tr th:if="${page.content.empty}">
-     <td colspan="4" class="text-center">No data</td>
+     <td colspan="5" class="text-center">No data</td>
     </tr>
    </tbody>
   </table>

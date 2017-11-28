@@ -11,8 +11,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import io.honeymon.learn.orm.domain.Member;
@@ -29,7 +32,7 @@ public class MemberViewController {
         return new MemberForm();
     }
 
-    @RequestMapping(method = GET)
+    @GetMapping
     public String viewMain(MemberCondition condition, Pageable pageable, Model model) {
         model.addAttribute("page", memberService.search(condition, pageable));
         return "members/main";
@@ -41,12 +44,12 @@ public class MemberViewController {
      * @param memberForm
      * @return
      */
-    @RequestMapping(value = "create", method = GET)
+    @GetMapping("/create")
     public String viewCreate(MemberForm memberForm) {
         return "members/detail";
     }
 
-    @RequestMapping(method = POST)
+    @PostMapping
     public String createMember(@Valid MemberForm memberForm, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             // TODO 에러발생한 것에 대한 처리
@@ -56,7 +59,7 @@ public class MemberViewController {
         return "redirect:/members";
     }
 
-    @RequestMapping(value = "/{member}", method = GET)
+    @GetMapping("/{member}")
     public String viewModifyMember(@PathVariable Member member, MemberForm memberForm, Model model) {
         model.addAttribute("member", member);
         memberForm.setName(member.getName());
@@ -64,7 +67,7 @@ public class MemberViewController {
         return "members/detail";
     }
 
-    @RequestMapping(value = "/{member}", method = PUT)
+    @PutMapping("/{member}")
     public String modifyMember(@PathVariable Member member, @Valid MemberForm memberForm, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "members/detail";
